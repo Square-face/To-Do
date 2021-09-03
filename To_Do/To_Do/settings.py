@@ -33,7 +33,7 @@ else:
     print('No secret key found, generating new key.')
     
     letters = string.ascii_letters + string.digits + string.punctuation
-    key = ''.join(random.choice(letters) for i in range(50))
+    key = ''.join(random.choice(letters) for i in range(100))
     print(f'Key generated: {key}\nSaving key...')
 
     with open('secret.key', 'w+') as file:
