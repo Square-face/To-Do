@@ -1,1 +1,3 @@
 To-Do/
+*.sqlite3
+*.pyc
