@@ -24,12 +24,18 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 if "DJANGO_KEY" in os.environ.keys():
+    # there exist a key in environment, use that one
     SECRET_KEY = os.environ["DJANGO_KEY"]
+
 else:
+    # there does not exist a key, generate a new one and store it
     print("No secret key in environment, generating new key")
+
     letters = string.ascii_letters
     key = ''.join(random.choice(letters) for i in range(10))
+
     print (f'Key: {key}')
+    
     os.environ["DJANGO_KEY"] = key
     SECRET_KEY = os.environ["DJANGO_KEY"]
 
