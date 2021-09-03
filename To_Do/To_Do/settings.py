@@ -34,11 +34,12 @@ else:
     
     letters = string.ascii_letters + string.digits + string.punctuation
     key = ''.join(random.choice(letters) for i in range(50))
-    print(f'Key generated: {key}\nKey is stored in secret.key', end='\n\n')
+    print(f'Key generated: {key}\nSaving key...')
 
     with open('secret.key', 'w+') as file:
         file.write(key)
-    
+    print('key saved in secret.key', end='\n\n')
+
     SECRET_KEY = key
 
 # SECURITY WARNING: don't run with debug turned on in production!
