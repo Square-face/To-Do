@@ -8,7 +8,7 @@ Instructions for how to setup the site on your local computer
 2. Create a virtual environment. run `python -m venv To-Do`
 
 3. Start your virtual environment.
-   1. If you are using CMD, run `To-Do/Scripts/activate`
+   1. If you are using Windows CMD, run `To-Do/Scripts/activate`
    2. If you are using Bash, run `source To-Do/bin/activate`
    3. find a full list of commands [here](https://docs.python.org/3/library/venv.html)
 
