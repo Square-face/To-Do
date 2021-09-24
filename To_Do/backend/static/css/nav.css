@@ -1,0 +1,30 @@
+nav {
+    display: grid;
+    grid-template-columns: 400px auto 40px;
+    grid-template-rows: 50px;
+    padding: 30px;
+}
+
+.options {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 0 10px;
+}
+
+.nav-item {
+    font-size: 23px;
+    text-decoration: none;
+    color: #fff;
+    margin: 0 30px;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.user {
+    justify-self: right;
+    grid-column: 2;
+    grid-row: 1;
+}

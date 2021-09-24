@@ -1,0 +1,18 @@
+ {% extends "base.html" %} {% load static %} {% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/form.css' %}">{% endblock %} {% block title %}Login{% endblock %} {% block content %}
+
+<form action="/login" method="POST">
+    <div>
+        <label for="email" class="required">Email</label>
+        <input id="email" type="email" name="email" placeholder="Enter Email" required autofocus="true">
+    </div>
+
+    <div>
+        <label for="password" class="required">Password</label>
+        <input id="password" type="password" name="password" placeholder="Enter Password" required>
+    </div>
+
+    <button type="submit" id="login">Login</button>
+</form>
+
+{% endblock %}

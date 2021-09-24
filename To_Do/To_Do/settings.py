@@ -58,6 +58,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'backend.apps.BackendConfig',
+    'register.apps.RegisterConfig',
 ]
 
 MIDDLEWARE = [
@@ -71,6 +72,10 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'To_Do.urls'
+
+TEMPLATE_DIRS = (
+    'backend/templates', 
+)
 
 TEMPLATES = [
     {

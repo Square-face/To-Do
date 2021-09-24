@@ -1,0 +1,71 @@
+body {
+    overflow: hidden;
+}
+
+form {
+    display: flex;
+    width: 100%;
+    height: 70%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form>div {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+label {
+    margin: 3px 0;
+    font-size: 25px;
+    color: white;
+}
+
+label.required::after {
+    content: "*";
+    color: red;
+}
+
+input {
+    background-color: transparent;
+    color: rgb(189, 189, 189);
+    border: none;
+    border-bottom: 1px solid white;
+    font-size: 22px;
+}
+
+input:invalid {
+    border-color: rgb(247, 54, 54);
+}
+
+input:valid {
+    border-color: rgb(45, 196, 45);
+}
+
+input:focus {
+    outline: none;
+    color: white;
+    border-color: aqua;
+}
+
+button {
+    font-size: 27px;
+    padding: 5px 13px;
+    margin: 10px 0;
+    background-color: rgb(6, 99, 6);
+    border: 1px solid rgb(5, 71, 5);
+    border-radius: 10px;
+    box-shadow: -4px 4px 0px rgb(5, 71, 5);
+    transform: translate(4px, -4px);
+}
+
+button:hover {
+    background-color: rgb(6, 116, 6);
+}
+
+button:focus {
+    box-shadow: -2px 2px 0px rgb(5, 71, 5);
+    transform: translate(2px, -2px);
+}

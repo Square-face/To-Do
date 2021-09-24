@@ -16,7 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+from register import views as v1
+from backend import views as v2
+
+handler404 = 'backend.views.error_404'
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('backend.urls')),
+    path('login', v1.login),
+    path('', v2.index),
 ]
